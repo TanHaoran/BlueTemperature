@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/alarm_select_bg"
+        android:padding="20dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_line_height"
+        android:layout_marginLeft="@dimen/detail_line_marginLeft"
+        android:layout_marginRight="@dimen/detail_line_marginLeft">
+
+        <ImageView
+            android:id="@+id/iv_high_fever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/curve_temperature_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/detail_line_text_marginLeft"
+            android:layout_toRightOf="@id/iv_high_fever"
+            android:text="@string/higher_fever"
+            android:textColor="@color/titlebar_title"
+            android:textSize="@dimen/detail_line_text" />
+
+        <TextView
+            android:id="@+id/tv_high_fever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="37°C"
+            android:textColor="@color/higher_fever"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alarm_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_line_height"
+        android:layout_marginLeft="@dimen/detail_line_marginLeft"
+        android:layout_marginRight="@dimen/detail_line_marginLeft">
+
+        <ImageView
+            android:id="@+id/iv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/curve_start_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/detail_line_text_marginLeft"
+            android:layout_toRightOf="@id/iv_start_time"
+            android:text="@string/start_time"
+            android:textColor="@color/device_battery"
+            android:textSize="@dimen/detail_line_text" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="37°C"
+            android:textColor="@color/device_battery"
+            android:textSize="@dimen/detail_line_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alarm_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_line_height"
+        android:layout_marginLeft="@dimen/detail_line_marginLeft"
+        android:layout_marginRight="@dimen/detail_line_marginLeft">
+
+        <ImageView
+            android:id="@+id/iv_duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/curve_continue_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/detail_line_text_marginLeft"
+            android:layout_toRightOf="@id/iv_duration_time"
+            android:text="@string/duration_time"
+            android:textColor="@color/device_battery"
+            android:textSize="@dimen/detail_line_text" />
+
+        <TextView
+            android:id="@+id/tv_duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="37°C"
+            android:textColor="@color/device_battery"
+            android:textSize="@dimen/detail_line_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alarm_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_line_height"
+        android:layout_marginLeft="@dimen/detail_line_marginLeft"
+        android:layout_marginRight="@dimen/detail_line_marginLeft">
+
+        <ImageView
+            android:id="@+id/iv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/curve_start_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/detail_line_text_marginLeft"
+            android:layout_toRightOf="@id/iv_end_time"
+            android:text="@string/end_time"
+            android:textColor="@color/device_battery"
+            android:textSize="@dimen/detail_line_text" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="37°C"
+            android:textColor="@color/device_battery"
+            android:textSize="@dimen/detail_line_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alarm_divider" />
+    </RelativeLayout>
+
+
+</LinearLayout>

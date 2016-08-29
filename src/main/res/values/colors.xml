@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--系统默认-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--自定义控件-->
+    <color name="rippelColor">#0099CC</color>
+
+
+    <!--常用颜色-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!--标题栏-->
+    <color name="titlebar_title">#434658</color>
+
+    <!--设置-->
+    <color name="setting_text">#434658</color>
+
+    <!--设备-->
+    <color name="device_id">#434658</color>
+    <color name="device_battery">#767a97</color>
+
+    <!--添加闹钟-->
+    <color name="alarm_divider">#d3e3ed</color>
+    <color name="day_select">#767a97</color>
+
+    <!--体温详细-->
+    <color name="higher_fever">#ff487e</color>
+
+</resources>

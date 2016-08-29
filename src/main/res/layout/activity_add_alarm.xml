@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/alarm_select_bg"
+        android:orientation="vertical">
+
+        <com.jerry.bluetemperature.view.TitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_title_height"
+            android:background="@color/transparent"
+            jerry:left_img="@drawable/back_icon_white"
+            jerry:right_img="@drawable/check_white"
+            jerry:title_text="@string/add_alarm_title"
+            jerry:title_textColor="@color/white"
+            jerry:title_textSize="@dimen/titlebar_title_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel_meridiem"
+                android:layout_width="@dimen/time_select_width"
+                android:layout_height="match_parent" />
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel_hour"
+                android:layout_width="@dimen/time_select_width"
+                android:layout_height="match_parent" />
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel_minute"
+                android:layout_width="@dimen/time_select_width"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/repeat_text_height"
+        android:layout_marginLeft="@dimen/text_marginLeft"
+        android:gravity="center_vertical"
+        android:text="@string/repeat"
+        android:textColor="@color/device_id"
+        android:textSize="@dimen/repeat_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/alarm_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/text_marginLeft"
+        android:layout_marginRight="@dimen/text_marginLeft"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_monday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/monday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_tuesday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/tuesday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/text_marginLeft"
+        android:layout_marginRight="@dimen/text_marginLeft"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_wednesday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/wednesday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_thursday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/thursday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/text_marginLeft"
+        android:layout_marginRight="@dimen/text_marginLeft"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_friday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/friday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_saturday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/saturday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/text_marginLeft"
+        android:layout_marginRight="@dimen/text_marginLeft"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cb_sunday"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/sunday"
+            android:textColor="@color/day_select"
+            android:textSize="@dimen/repeat_text" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

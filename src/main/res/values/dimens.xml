@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+
+    <dimen name="btn_text">18sp</dimen>
+
+    <!--标题栏-->
+    <dimen name="titlebar_title_text">18sp</dimen>
+    <dimen name="titlebar_title_height">50dp</dimen>
+
+    <!--历史体温-->
+    <dimen name="history_item_corner">10dp</dimen>
+    <dimen name="history_item_height">80dp</dimen>
+    <dimen name="history_item_big_text">20sp</dimen>
+    <dimen name="history_item_small_text">16sp</dimen>
+
+    <!--设置-->
+    <dimen name="setting_layout_height">177dp</dimen>
+    <dimen name="setting_text_marginTop">10dp</dimen>
+    <dimen name="setting_text">16sp</dimen>
+
+    <!--选择设备-->
+    <dimen name="device_select_text">16sp</dimen>
+    <dimen name="device_select_height">52dp</dimen>
+    <dimen name="device_select_marginBottom">20dp</dimen>
+    <dimen name="device_select_padding">15dp</dimen>
+
+    <!--主页-->
+    <dimen name="main_btn_width">38dp</dimen>
+    <dimen name="main_text_height">25dp</dimen>
+    <dimen name="main_text_marginLeft">60dp</dimen>
+    <dimen name="main_textSize">16sp</dimen>
+
+    <!--添加闹钟-->
+    <dimen name="time_select_width">80dp</dimen>
+    <dimen name="repeat_text_height">58dp</dimen>
+    <dimen name="repeat_text">16sp</dimen>
+    <dimen name="text_marginLeft">35dp</dimen>
+    <dimen name="text_padding">13dp</dimen>
+    <dimen name="text_height">55dp</dimen>
+    <dimen name="item_margin">20dp</dimen>
+    <dimen name="item_height">70dp</dimen>
+    <dimen name="alarm_time">24sp</dimen>
+    <dimen name="alarm_day">14sp</dimen>
+
+    <!--体温详细-->
+    <dimen name="detail_line_height">53dp</dimen>
+    <dimen name="detail_line_marginLeft">20dp</dimen>
+    <dimen name="detail_line_text_marginLeft">10dp</dimen>
+    <dimen name="detail_line_text">16sp</dimen>
+
+    <!--使用说明-->
+    <dimen name="instructions_marginLeft">20dp</dimen>
+    <dimen name="instructions_text_marginLeft">15dp</dimen>
+    <dimen name="instructions_text">16sp</dimen>
+    <dimen name="instructions_number_text">9sp</dimen>
+    <dimen name="instructions_line_marginTop">20dp</dimen>
+
+</resources>

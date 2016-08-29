@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <LinearLayout
+        android:id="@+id/swipe_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/transparent"
+        android:gravity="center|right">
+
+        <Button
+            android:id="@+id/id_remove"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#ff3b2f"
+            android:text="@string/Delete"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/swipe_front"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingRight="@dimen/item_margin">
+
+        <TextView
+            android:id="@+id/tv_meridiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="上午"
+            android:textColor="@color/titlebar_title"
+            android:textSize="@dimen/alarm_day" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_meridiem"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="8:10"
+                android:textColor="@color/titlebar_title"
+                android:textSize="@dimen/alarm_time" />
+
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="周一 周二"
+                android:textColor="@color/titlebar_title"
+                android:textSize="@dimen/alarm_day" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/switch_on" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

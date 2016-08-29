@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jerry.bluetemperature.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_title_height"
+        android:background="@color/white"
+        jerry:left_img="@drawable/back_icon"
+        jerry:title_text="@string/threshold_title"
+        jerry:title_textColor="@color/titlebar_title"
+        jerry:title_textSize="@dimen/titlebar_title_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.jerry.bluetemperature.view.SelectBox
+            android:id="@+id/selectbox_vibration"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_select_height"
+            android:layout_marginBottom="@dimen/device_select_marginBottom"
+            jerry:content="@string/notice_vibration" />
+
+        <com.jerry.bluetemperature.view.SelectBox
+            android:id="@+id/selectbox_sound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_select_height"
+            android:layout_marginBottom="@dimen/device_select_marginBottom"
+            jerry:checked="true"
+            jerry:content="@string/notice_sound" />
+    </LinearLayout>
+
+</LinearLayout>

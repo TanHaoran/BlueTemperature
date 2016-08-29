@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jerry.bluetemperature.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_title_height"
+        android:background="@color/white"
+        jerry:left_img="@drawable/back_icon"
+        jerry:title_text="@string/about_us"
+        jerry:title_textColor="@color/titlebar_title"
+        jerry:title_textSize="@dimen/titlebar_title_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:background="@color/alarm_divider" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/us_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/setting_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/version"
+        android:textColor="@color/device_battery"
+        android:textSize="14sp" />
+
+    <TextView
+        android:textColor="@color/setting_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:text="@string/company_intro"
+        android:textSize="14sp" />
+
+    <TextView
+        android:textColor="@color/setting_text"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:text="@string/phone" />
+
+    <TextView
+        android:textColor="@color/setting_text"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/email" />
+
+
+</LinearLayout>

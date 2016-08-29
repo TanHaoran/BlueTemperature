@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jerry.bluetemperature.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_title_height"
+        android:background="@color/white"
+        jerry:left_img="@drawable/back_icon"
+        jerry:title_text="@string/instructions"
+        jerry:title_textColor="@color/titlebar_title"
+        jerry:title_textSize="@dimen/titlebar_title_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:background="@color/alarm_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:textSize="@dimen/instructions_number_text"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sysm_bg" />
+
+        <TextView
+            android:textSize="@dimen/instructions_text"
+            android:textColor="@color/setting_text"
+            android:text="@string/step_1"
+            android:layout_marginLeft="@dimen/instructions_text_marginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:layout_marginTop="@dimen/instructions_line_marginTop">
+
+        <TextView
+            android:textSize="@dimen/instructions_number_text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sysm_bg" />
+
+        <TextView
+            android:textSize="@dimen/instructions_text"
+            android:textColor="@color/setting_text"
+            android:text="@string/step_2"
+            android:layout_marginLeft="@dimen/instructions_text_marginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:layout_marginTop="@dimen/instructions_line_marginTop">
+
+        <TextView
+            android:textSize="@dimen/instructions_number_text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sysm_bg" />
+
+        <TextView
+            android:textSize="@dimen/instructions_text"
+            android:textColor="@color/setting_text"
+            android:text="@string/step_3"
+            android:layout_marginLeft="@dimen/instructions_text_marginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:layout_marginTop="@dimen/instructions_line_marginTop">
+
+        <TextView
+            android:textSize="@dimen/instructions_number_text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sysm_bg" />
+
+        <TextView
+            android:textSize="@dimen/instructions_text"
+            android:textColor="@color/setting_text"
+            android:text="@string/step_4"
+            android:layout_marginLeft="@dimen/instructions_text_marginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/instructions_marginLeft"
+        android:layout_marginRight="@dimen/instructions_marginLeft"
+        android:layout_marginTop="@dimen/instructions_line_marginTop">
+
+        <TextView
+            android:textSize="@dimen/instructions_number_text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sysm_bg" />
+
+        <TextView
+            android:textSize="@dimen/instructions_text"
+            android:textColor="@color/setting_text"
+            android:text="@string/step_5"
+            android:layout_marginLeft="@dimen/instructions_text_marginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

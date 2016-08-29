@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/big_bg">
+
+    <com.jerry.bluetemperature.view.RippleBackground
+        android:id="@+id/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        jerry:rb_color="#95d8ff"
+        jerry:rb_duration="6000"
+        jerry:rb_radius="60dp"
+        jerry:rb_rippleAmount="6"
+        jerry:rb_scale="3" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/monitor"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bluetooth_icon"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37.2"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_bluetooth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="正在扫描设备！"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_bluetooth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/stop_monitor_bg"
+        android:gravity="center"
+        android:text="@string/stop_monitor"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_duration"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_text_height"
+        android:layout_below="@id/tv_stop"
+        android:layout_marginLeft="@dimen/main_text_marginLeft"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duration"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textSize" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30分钟"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_device"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_text_height"
+        android:layout_below="@id/ll_duration"
+        android:layout_marginLeft="@dimen/main_text_marginLeft"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textSize" />
+
+        <TextView
+            android:id="@+id/tv_device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="57400520"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textSize" />
+
+        <TextView
+            android:id="@+id/tv_device_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="电量50%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_textSize" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_history"
+        android:layout_width="@dimen/main_btn_width"
+        android:layout_height="@dimen/main_btn_width"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_icon" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_setting"
+        android:layout_width="@dimen/main_btn_width"
+        android:layout_height="@dimen/main_btn_width"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_set" />
+    </LinearLayout>
+
+
+</RelativeLayout>

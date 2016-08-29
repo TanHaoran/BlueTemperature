@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jerry.bluetemperature.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_title_height"
+        android:background="@color/white"
+        jerry:left_img="@drawable/back_icon"
+        jerry:title_text="@string/alarm_title"
+        jerry:title_textColor="@color/titlebar_title"
+        jerry:title_textSize="@dimen/titlebar_title_text" />
+
+    <TextView
+        android:id="@+id/tv_add_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="@string/add_alarm_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alarm_divider" />
+
+    <com.jerry.bluetemperature.view.SwipeListView
+        android:id="@+id/swipelistview"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:divider="@color/alarm_divider"
+        jerry:swipeActionLeft="reveal"
+        jerry:swipeBackView="@+id/swipe_back"
+        jerry:swipeCloseAllItemsWhenMoveList="true"
+        jerry:swipeFrontView="@+id/swipe_front"
+        jerry:swipeMode="left"
+        jerry:swipeOffsetLeft="0dp"
+        jerry:swipeOpenOnLongPress="false" />
+
+
+</LinearLayout>

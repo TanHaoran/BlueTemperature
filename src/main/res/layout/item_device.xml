@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/device_select_height"
+    android:background="@drawable/selec_equipment_blue"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selec_equipment" />
+
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_select"
+        android:text="573222132"
+        android:textColor="@color/device_id"
+        android:textSize="@dimen/device_select_text" />
+
+
+    <TextView
+        android:id="@+id/tv_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="98%"
+        android:textColor="@color/device_battery"
+        android:textSize="@dimen/device_select_text" />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jerry="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jerry.bluetemperature.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_title_height"
+        android:background="@color/white"
+        jerry:left_img="@drawable/back_icon"
+        jerry:title_text="@string/threshold_title"
+        jerry:title_textColor="@color/titlebar_title"
+        jerry:title_textSize="@dimen/titlebar_title_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.jerry.bluetemperature.view.SelectBox
+            android:id="@+id/selectbox_super"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_select_height"
+            android:layout_marginBottom="@dimen/device_select_marginBottom"
+            jerry:content="@string/super_fever" />
+
+        <com.jerry.bluetemperature.view.SelectBox
+            android:id="@+id/selectbox_high"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_select_height"
+            android:layout_marginBottom="@dimen/device_select_marginBottom"
+            jerry:content="@string/high_fever" />
+
+        <com.jerry.bluetemperature.view.SelectBox
+            android:id="@+id/selectbox_mid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_select_height"
+            android:layout_marginBottom="@dimen/device_select_marginBottom"
+            jerry:content="@string/mid_fever" />
+
+        <com.jerry.bluetemperature.view.SelectBox
+            android:id="@+id/selectbox_low"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_select_height"
+            android:layout_marginBottom="@dimen/device_select_marginBottom"
+            jerry:content="@string/low_fever" />
+
+    </LinearLayout>
+
+</LinearLayout>
