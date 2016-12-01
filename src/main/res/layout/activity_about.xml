@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.jerry.bluetemperature.view.TitleBar
+    <com.jerry.bluetemperature.com.jerry.roundindicator.view.TitleBar
         android:id="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/titlebar_title_height"

@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.jerry.bluetemperature.view.TitleBar
+    <com.jerry.bluetemperature.com.jerry.roundindicator.view.TitleBar
         android:id="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/titlebar_title_height"
@@ -22,14 +22,14 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <com.jerry.bluetemperature.view.SelectBox
+        <com.jerry.bluetemperature.com.jerry.roundindicator.view.SelectBox
             android:id="@+id/selectbox_vibration"
             android:layout_width="match_parent"
             android:layout_height="@dimen/device_select_height"
             android:layout_marginBottom="@dimen/device_select_marginBottom"
             jerry:content="@string/notice_vibration" />
 
-        <com.jerry.bluetemperature.view.SelectBox
+        <com.jerry.bluetemperature.com.jerry.roundindicator.view.SelectBox
             android:id="@+id/selectbox_sound"
             android:layout_width="match_parent"
             android:layout_height="@dimen/device_select_height"

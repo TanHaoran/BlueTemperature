@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.jerry.bluetemperature.view.TitleBar
+    <com.jerry.bluetemperature.com.jerry.roundindicator.view.TitleBar
         android:id="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/titlebar_title_height"
@@ -22,28 +22,28 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <com.jerry.bluetemperature.view.SelectBox
+        <com.jerry.bluetemperature.com.jerry.roundindicator.view.SelectBox
             android:id="@+id/selectbox_super"
             android:layout_width="match_parent"
             android:layout_height="@dimen/device_select_height"
             android:layout_marginBottom="@dimen/device_select_marginBottom"
             jerry:content="@string/super_fever" />
 
-        <com.jerry.bluetemperature.view.SelectBox
+        <com.jerry.bluetemperature.com.jerry.roundindicator.view.SelectBox
             android:id="@+id/selectbox_high"
             android:layout_width="match_parent"
             android:layout_height="@dimen/device_select_height"
             android:layout_marginBottom="@dimen/device_select_marginBottom"
             jerry:content="@string/high_fever" />
 
-        <com.jerry.bluetemperature.view.SelectBox
+        <com.jerry.bluetemperature.com.jerry.roundindicator.view.SelectBox
             android:id="@+id/selectbox_mid"
             android:layout_width="match_parent"
             android:layout_height="@dimen/device_select_height"
             android:layout_marginBottom="@dimen/device_select_marginBottom"
             jerry:content="@string/mid_fever" />
 
-        <com.jerry.bluetemperature.view.SelectBox
+        <com.jerry.bluetemperature.com.jerry.roundindicator.view.SelectBox
             android:id="@+id/selectbox_low"
             android:layout_width="match_parent"
             android:layout_height="@dimen/device_select_height"

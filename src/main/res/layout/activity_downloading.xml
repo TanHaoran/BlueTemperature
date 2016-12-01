@@ -7,7 +7,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.jerry.bluetemperature.view.RoundProgressBar
+    <com.jerry.bluetemperature.com.jerry.roundindicator.view.RoundProgressBar
         android:id="@+id/round_progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

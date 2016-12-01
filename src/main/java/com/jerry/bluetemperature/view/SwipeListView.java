@@ -65,7 +65,7 @@ public class SwipeListView extends ListView {
     public final static int SWIPE_MODE_LEFT = 3;
 
     /**
-     * Binds the swipe gesture to reveal a view behind the row (Drawer style)
+     * Binds the swipe gesture to reveal a com.jerry.roundindicator.view behind the row (Drawer style)
      */
     public final static int SWIPE_ACTION_REVEAL = 0;
 
@@ -85,12 +85,12 @@ public class SwipeListView extends ListView {
     public final static int SWIPE_ACTION_NONE = 3;
 
     /**
-     * Default ids for front view
+     * Default ids for front com.jerry.roundindicator.view
      */
     public final static String SWIPE_DEFAULT_FRONT_VIEW = "swipelist_frontview";
 
     /**
-     * Default id for back view
+     * Default id for back com.jerry.roundindicator.view
      */
     public final static String SWIPE_DEFAULT_BACK_VIEW = "swipelist_backview";
 
@@ -225,7 +225,7 @@ public class SwipeListView extends ListView {
     /**
      * Recycle cell. This method should be called from getView in Adapter when use SWIPE_ACTION_CHOICE
      *
-     * @param convertView parent view
+     * @param convertView parent com.jerry.roundindicator.view
      * @param position    position in list
      */
     public void recycle(View convertView, int position) {

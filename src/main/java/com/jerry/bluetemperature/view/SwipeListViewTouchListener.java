@@ -102,8 +102,8 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
      * Constructor
      *
      * @param swipeListView  SwipeListView
-     * @param swipeFrontView front view Identifier
-     * @param swipeBackView  back view Identifier
+     * @param swipeFrontView front com.jerry.roundindicator.view Identifier
+     * @param swipeBackView  back com.jerry.roundindicator.view Identifier
      */
     public SwipeListViewTouchListener(SwipeListView swipeListView, int swipeFrontView, int swipeBackView) {
         this.swipeFrontView = swipeFrontView;
@@ -118,18 +118,18 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     }
 
     /**
-     * Sets current item's parent view
+     * Sets current item's parent com.jerry.roundindicator.view
      *
-     * @param parentView Parent view
+     * @param parentView Parent com.jerry.roundindicator.view
      */
     private void setParentView(View parentView) {
         this.parentView = parentView;
     }
 
     /**
-     * Sets current item's front view
+     * Sets current item's front com.jerry.roundindicator.view
      *
-     * @param frontView Front view
+     * @param frontView Front com.jerry.roundindicator.view
      */
     private void setFrontView(View frontView) {
         this.frontView = frontView;
@@ -151,7 +151,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     }
 
     /**
-     * Set current item's back view
+     * Set current item's back com.jerry.roundindicator.view
      *
      * @param backView
      */
@@ -388,7 +388,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Draw cell for display if item is selected or not
      *
-     * @param frontView view to draw
+     * @param frontView com.jerry.roundindicator.view to draw
      * @param position  position in list
      */
     protected void reloadChoiceStateInView(View frontView, int position) {
@@ -443,7 +443,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Open item
      *
-     * @param view     affected view
+     * @param view     affected com.jerry.roundindicator.view
      * @param position Position of list
      */
     private void openAnimate(View view, int position) {
@@ -455,7 +455,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Close item
      *
-     * @param view     affected view
+     * @param view     affected com.jerry.roundindicator.view
      * @param position Position of list
      */
     private void closeAnimate(View view, int position) {
@@ -467,7 +467,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Create animation
      *
-     * @param view      affected view
+     * @param view      affected com.jerry.roundindicator.view
      * @param swap      If state should change. If "false" returns to the original position
      * @param swapRight If swap is true, this parameter tells if move is to the right or left
      * @param position  Position of list
@@ -488,7 +488,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Create choice animation
      *
-     * @param view     affected view
+     * @param view     affected com.jerry.roundindicator.view
      * @param position list position
      */
     private void generateChoiceAnimate(final View view, final int position) {
@@ -507,7 +507,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Create dismiss animation
      *
-     * @param view      affected view
+     * @param view      affected com.jerry.roundindicator.view
      * @param swap      If will change state. If is "false" returns to the original position
      * @param swapRight If swap is true, this parameter tells if move is to the right or left
      * @param position  Position of list
@@ -550,7 +550,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     /**
      * Create reveal animation
      *
-     * @param view      affected view
+     * @param view      affected com.jerry.roundindicator.view
      * @param swap      If will change state. If "false" returns to the original position
      * @param swapRight If swap is true, this parameter tells if movement is toward right or left
      * @param position  list position
@@ -791,7 +791,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
                 velocityTracker.recycle();
                 velocityTracker = null;
                 downX = 0;
-                // change clickable front view
+                // change clickable front com.jerry.roundindicator.view
 //                if (swap) {
 //                    frontView.setClickable(opened.get(downPosition));
 //                    frontView.setLongClickable(opened.get(downPosition));
@@ -894,7 +894,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     }
 
     /**
-     * Moves the view
+     * Moves the com.jerry.roundindicator.view
      *
      * @param deltaX delta
      */
@@ -1022,7 +1022,7 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
 
         ViewGroup.LayoutParams lp;
         for (PendingDismissData pendingDismiss : pendingDismisses) {
-            // Reset view presentation
+            // Reset com.jerry.roundindicator.view presentation
             if (pendingDismiss.view != null) {
                 setAlpha(pendingDismiss.view, 1f);
                 setTranslationX(pendingDismiss.view, 0);

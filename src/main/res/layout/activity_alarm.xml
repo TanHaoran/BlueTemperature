@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.jerry.bluetemperature.view.TitleBar
+    <com.jerry.bluetemperature.com.jerry.roundindicator.view.TitleBar
         android:id="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/titlebar_title_height"
@@ -33,7 +33,7 @@
         android:layout_height="1dp"
         android:background="@color/alarm_divider" />
 
-    <com.jerry.bluetemperature.view.SwipeListView
+    <com.jerry.bluetemperature.com.jerry.roundindicator.view.SwipeListView
         android:id="@+id/swipelistview"
         android:dividerHeight="1dp"
         android:layout_width="match_parent"
